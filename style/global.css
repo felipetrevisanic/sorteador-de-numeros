@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+
+    --bg-primary: #020202;
+    --bg-secondary: #111012;
+    --bg-tertiary: #24222E;
+    --bg-brand: #C58DE7;
+    --bg-gray: #3D3D3D;
+
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0AF;
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+
+    --gradient-rainbow: linear-gradient(99deg, var(--accent-green) 0%, var(--accent-lime) 15%, var(--accent-red) 32%, var(--accent-pink) 66%, var(--accent-blue) 86%);
+    --gradient-bg: linear-gradient(99deg, var(--accent-pink), var(--accent-blue));
+    --gradient-content: linear-gradient(to right, var(--content-secondary), var(--bg-gray));
+
+    --ff-sora: "Sora", sans-serif;
+    --ff-mono: "Roboto Mono", sans-serif;
+    --ff-flex: "Roboto Flex", sans-serif;
+    --display-lg: 900 4.5rem/1.3 var(--ff-sora); 
+    --display-md: 900 2.5rem/1.3 var(--ff-sora); 
+    --display-sm: 700 2rem/1.3 var(--ff-sora); 
+    --overline: 700 1rem/1.5 var(--ff-mono);
+    --p-lg: 500 1rem/1.5 var(--ff-flex);
+    --p-md: 500 0.875rem/1.5 var(--ff-flex);
+    --p-sm: 500 0.75rem/1.5 var(--ff-flex);
+    --label-md: 700 1.25rem/1.5 var(--ff-flex);
+    --label-sm: 700 1rem/1.5 var(--ff-flex);
+    
+
+}
+
+
+body{
+    background-color: var(--bg-primary);
+    padding-block: 2.75rem;
+    color: var(--content-primary);
+}
+
+h1{
+    font: var(--display-md);
+}
+
+h2{
+    font: var(--label-md);
+}
+
+p{
+    font: var(--p-md);
+    color: var(--content-tertiary);
+}
+
+header {
+    margin-bottom: 0.25rem;
+}
+
+.overline {
+    font: var(--overline);
+    background: var(--gradient-content);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (width >= 80rem) {
+
+    h1 {
+        font: var(--display-lg);
+    }
+}
