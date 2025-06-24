@@ -23,24 +23,27 @@
             <h2 class="uppercase">Quero Sortear</h2>
             <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
         </section>
-        <section>
-            <div>
+        <form class="form grid-area">
+            <div class="a uppercase flex flex-col gap-0.5">
                 <p>Números</p>
-                <p>de</p>
-                <p>de</p>
+                <input type="number" value="0">
             </div>
-            <div>
-                <span>2</span>
-                <span>1</span>
-                <span>100</span>
+            <div class="b uppercase flex flex-col gap-0.5">
+                <p>de</p>
+                <input type="number" value="0">
             </div>
-            <div>
-                <div>
-
+            <div class="c uppercase flex flex-col gap-0.5">
+                <p>de</p>
+                <input type="number" value="0">
+            </div>
+            <div class="d flex gap-1">
+                <div class="toggle">
+                    <input type="checkbox">
+                    <span class="slider"> </span>
                 </div>
                 <span>Não repetir número</span>
             </div>
-        </section>
+        </form>
         <section>
             <button class="uppercase">Sortear</button>
         </section>
