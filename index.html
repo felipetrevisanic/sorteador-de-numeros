@@ -14,36 +14,40 @@
     <header class="flex flex-center">
         <img src="assets/logo.svg" alt="logo">
     </header>
-    <section class="title pd-in-36 pd-bl-42 flex flex-col gap-0.5">
+    <section class="title pd-bl-42 flex flex-col gap-0.5">
         <span class="overline uppercase">online - gratuito</span>
         <h1 class="uppercase">Sorteador de números</h1>
     </section>
-    <main class="flex flex-col gap-2.5 pd-in-36">
-        <section>
+    <main class="flex flex-col gap-2.5">
+        <div>
             <h2 class="uppercase">Quero Sortear</h2>
             <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
-        </section>
-        <section>
-            <div>
-                <p>Números</p>
-                <p>de</p>
-                <p>de</p>
-            </div>
-            <div>
-                <span>2</span>
-                <span>1</span>
-                <span>100</span>
-            </div>
+        </div>
+        <div >
+            <form class="flex gap-0.75 uppercase text-center ">
+                <div class="flex flex-col gap-0.5">
+                    <p>Números</p>
+                    <input type="number" value="2">
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <p>de</p>
+                    <input type="number" value="1">
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <p>de</p>
+                    <input type="number" value="100">
+                </div>
+            </form>
             <div>
                 <div>
-
+    
                 </div>
                 <span>Não repetir número</span>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <button class="uppercase">Sortear</button>
-        </section>
+        </div>
     </main>
 </body>
 </html>
