@@ -11,6 +11,9 @@
     align-items: center;
 }
 
+.align-center {
+    align-items: center;
+}
 .flex-space-around{
     justify-content: space-around;
 }
@@ -31,7 +34,9 @@
     gap: 2.5rem;
 }
 
-
+.mg-top-1\.25 {
+    margin-top: 1.25rem;
+}
 
 .uppercase {
     text-transform: uppercase;
