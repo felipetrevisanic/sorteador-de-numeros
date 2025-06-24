@@ -47,7 +47,7 @@
 
 
 body{
-    background: url('../assets/Shapes.svg') no-repeat center/cover;
+    /* background: url('../assets/Shapes.svg') no-repeat center/cover; */
     background-color: var(--bg-primary);
     padding-block: 2.75rem;
     padding-inline: 2.25rem;
@@ -91,6 +91,17 @@ input[type="checkbox"]{
     display: none;
 }
 
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--bg-tertiary);
+    color: var(--content-primary);
+    font: var(--label-md);
+    margin-bottom: 5rem;
+}
+
 .toggle-container {
     
 
@@ -117,8 +128,6 @@ input[type="checkbox"]{
         border-radius: 1rem;
     }
 }
-
-
 
 .overline {
     font: var(--overline);

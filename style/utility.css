@@ -30,12 +30,16 @@
     gap: 1rem;
 }
 
+.gap-2\.25{
+    gap: 2.25rem;
+}
+
 .gap-2\.5{
     gap: 2.5rem;
 }
 
 .mg-top-1\.25 {
-    margin-top: 1.25rem;
+    margin-top: 1.25rem ;
 }
 
 .uppercase {
