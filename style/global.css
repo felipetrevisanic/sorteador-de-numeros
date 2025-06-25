@@ -102,6 +102,11 @@ button {
     margin-bottom: 5rem;
 }
 
+img[src*="talking"]{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
 .toggle-container {
     
 
@@ -137,6 +142,10 @@ button {
     -webkit-text-fill-color: transparent;
 }
 
+.question {
+    font: var(--p-md);
+    color: var(--content-brand);
+}
 
 @media (width >= 80rem) {
 
