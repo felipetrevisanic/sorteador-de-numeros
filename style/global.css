@@ -53,6 +53,8 @@ body{
     padding-inline: 2.25rem;
     color: var(--content-primary);
     overflow-x: hidden;
+    height: 100%;
+    
 }
 
 h1{
@@ -72,82 +74,18 @@ span {
     font: var(--p-sm);
 }
 
-header {
-    margin-bottom: 0.25rem;
-}
-
-input[type="number"]{
-    width: 5.5rem;
-    height: 5.375rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: var(--bg-secondary);
-    text-align: center;
-    color: var(--content-primary);
-    font: var(--display-md);
-}
-
-input[type="checkbox"]{
+ input[type="checkbox"]{
     display: none;
 }
 
-button {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: .5rem;
-    background-color: var(--bg-tertiary);
-    color: var(--content-primary);
-    font: var(--label-md);
-    margin-bottom: 5rem;
-}
 
-img[src*="talking"]{
-    width: 1.25rem;
-    height: 1.25rem;
-}
+@media (width>=80rem){
 
-.toggle-container {
-    
+    body {
+        padding-block: 4.75rem;
+        padding-inline: 8.375rem;
 
-    & .slider::before {
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        background: var(--content-primary);
-        transform: translateY(-50%);
-        top: 50%;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 1;
     }
-
-    & .slider {
-        display: inline-block;
-        width: 1.875rem;
-        height: 1.25rem;
-        background: var(--content-tertiary);
-        padding: .25rem;
-        position: relative;
-        z-index: 0;
-        border-radius: 1rem;
-    }
-}
-
-.overline {
-    font: var(--overline);
-    background: var(--gradient-content);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.question {
-    font: var(--p-md);
-    color: var(--content-brand);
-}
-
-@media (width >= 80rem) {
 
     h1 {
         font: var(--display-lg);

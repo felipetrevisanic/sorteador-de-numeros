@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.875rem;
+}
+
+@media (width>=80rem) {
+    header {
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 5.5625rem;
+    }
+
+}
