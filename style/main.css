@@ -57,8 +57,16 @@ main {
         }
 
         .toggle-container {
+                
+        & input[type="checkbox"]:checked + .slider {
+                background: var(--gradient-bg);
 
-          
+                &::before {
+                    right: 10%;
+                    left: auto; 
+                }
+            }
+
 
             & .slider {
                 display: inline-block;
@@ -69,6 +77,8 @@ main {
                 position: relative;
                 z-index: 0;
                 border-radius: 1rem;
+                cursor: pointer;
+
 
                 &::before {
                     content: "";
@@ -77,20 +87,14 @@ main {
                     background: var(--content-primary);
                     transform: translateY(-50%);
                     top: 50%;
-                    
+                    transition: left 0.3s ease, transform 0.3s ease;
                     border-radius: 50%;
                     position: absolute;
                     z-index: 1;
+
                 }
 
-                &.active {
-                    background: var(--gradient-bg);
-
-                    &::before {
-                        right: 10%;
-                        left: auto; 
-                    }
-                }
+                
             }
         }
 
@@ -109,7 +113,28 @@ main {
             justify-content: center;
             align-items: center;
             gap: .5rem;
+            position: relative;
+
+            &:hover {
+                background-color: var(--bg-secondary);
+
+               
+                
+            }
         }
+
+        & button:hover::after {
+            content: '';
+            position: absolute;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            border-radius: inherit;
+            background: var(--gradient-rainbow);
+            z-index: -1;
+           
+        }
+
+
     }
 
     .questions {
